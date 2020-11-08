@@ -4,7 +4,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SkillActivity">
+        tools:context=".Controller.SkillActivity">
 
     <ImageView
             android:id="@+id/imageView5"
@@ -35,7 +35,7 @@
             android:contentDescription="@string/logo" />
 
     <Button
-            android:id="@+id/button"
+            android:id="@+id/skillFinishBtn"
             android:text="@string/finish"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -48,7 +48,8 @@
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="onSkillFinishClicked" />
 
     <TextView
             android:text="@string/i_m_a"
@@ -90,7 +91,7 @@
                 android:fontFamily="@font/montserrat"
                 android:layout_marginEnd="16dp"
                 android:textOn="@string/beginner"
-                android:onClick="onBeginnerClicked" />
+                android:onClick="onBeginnerClick" />
 
         <ToggleButton
                 android:text="@string/baller"
@@ -104,7 +105,7 @@
                 android:textOn="@string/baller"
                 android:fontFamily="@font/montserrat"
                 android:layout_marginStart="16dp"
-                android:onClick="onBallerClicked" />
+                android:onClick="onBallerClick" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

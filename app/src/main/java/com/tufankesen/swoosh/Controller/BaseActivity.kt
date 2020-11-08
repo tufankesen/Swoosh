@@ -1,4 +1,4 @@
-package com.tufankesen.swoosh
+package com.tufankesen.swoosh.Controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
